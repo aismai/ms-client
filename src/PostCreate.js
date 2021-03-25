@@ -18,14 +18,11 @@ export default () => {
     return (
     <div>
         <form onSubmit={onSubmit}>
-            <div className="form-group">
+            <div className="mb-3">
                 <label>Title</label>
                 <input value={title} onChange={e => setTitle(e.target.value)} className="form-control" />
             </div>
-            <div className="form-group">
-                <button className="btn btn-primary">Submit</button> 
-            </div>
-
+            <button className="btn btn-primary">Submit</button> 
         </form>
     </div>
     )
